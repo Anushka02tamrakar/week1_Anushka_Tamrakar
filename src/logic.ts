@@ -1,6 +1,6 @@
 // returning string in JSON-----------
 export function splitString(inputString: string): { revisedString: string } {
-    const revisedString = inputString.replace('_', ' ');
+    const revisedString = inputString.split('_').join(' ');
     return { revisedString };
 }
 
